@@ -4,62 +4,167 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YoidDev – iOS Developer</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9fafb;
-      color: #111827;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 600px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin: 0.5rem 0;
-      line-height: 1.6;
-    }
-    .apps {
-      margin: 1.5rem 0;
-    }
-    .email a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .email a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <h1>👋 Hi, I’m a solo iOS developer</h1>
-    <p>I create and publish apps independently under the name <strong>YoidDev</strong>.</p>
-
-    <div class="apps">
-      <p>My apps include:</p>
-      <ul style="list-style: none; padding: 0;">
-        <li>📱 <strong>BauMauZoo</strong></li>
-        <li>⏱ <strong>MyWorkHours</strong></li>
-      </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Yoid<span>Dev</span></div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <p>If you’d like to get in touch, feel free to send me an email:</p>
-    <p class="email"><a href="mailto:yoiddev@gmail.com">yoiddev@gmail.com</a></p>
-  </div>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">iOS Developer</p>
+          <h1>Hey, I'm Yordan.</h1>
+          <p class="hero-subtitle">
+            I build focused, real-world iOS apps – from productivity tools to
+            e-commerce experiences. Currently working full-time and sharpening
+            my skills as an indie iOS developer.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View my projects</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About me</h2>
+          <p>
+            I'm an iOS developer who codes in my free time while working
+            full-time. I care about clean UI, simple flows, and shipping
+            features that actually help people.
+          </p>
+          <p>
+            My focus is on Swift and SwiftUI, building apps that are smooth,
+            responsive, and easy to maintain. I like turning ideas into real
+            products and iterating based on real user feedback.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <h3>What I work with</h3>
+          <ul>
+            <li>Swift, SwiftUI</li>
+            <li>REST APIs & JSON</li>
+            <li>App Store deployment</li>
+            <li>Clean, responsive UI design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">
+          A selection of apps I’ve published to the App Store.
+        </p>
+
+        <div class="projects-grid">
+          <!-- MyWorkHours -->
+          <article class="project-card">
+            <h3>MyWorkHours</h3>
+            <p class="project-tag">Productivity · Time Tracking</p>
+            <p>
+              A work hours tracker that lets you log time, manage shifts, and
+              keep an overview of how you spend your working day. Designed for
+              people who want a simple, focused way to track their time.
+            </p>
+            <ul class="project-features">
+              <li>Track working hours per day</li>
+              <li>Keep an overview of earnings or workload</li>
+              <li>Built with Swift / SwiftUI</li>
+            </ul>
+            <div class="project-links">
+              <a
+                class="btn small"
+                href="https://apps.apple.com/de/app/myworkhours/id6504833396?l=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View in App Store
+              </a>
+            </div>
+          </article>
+
+          <!-- BauMauZoo -->
+          <article class="project-card">
+            <h3>BauMauZoo</h3>
+            <p class="project-tag">Shopping · Pet Store</p>
+            <p>
+              An app for discovering and shopping for pet products. Users can
+              browse food, toys, and accessories and keep their pet’s essentials
+              in one place.
+            </p>
+            <ul class="project-features">
+              <li>Catalog of products for different pets</li>
+              <li>Clean, mobile-first shopping experience</li>
+              <li>Real-world app for a live business</li>
+            </ul>
+            <div class="project-links">
+              <a
+                class="btn small"
+                href="https://apps.apple.com/de/app/baumauzoo/id6751768658?l=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View in App Store
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2>Contact</h2>
+        <p>
+          Want to talk about a project, freelance work, or collaboration? Reach
+          out and I’ll get back to you as soon as I can.
+        </p>
+        <!-- Replace with your real email or links -->
+        <div class="contact-links">
+          <a href="mailto:yoiddev@gmail.com" class="btn primary">
+            Email me
+          </a>
+          <!-- Optional: GitHub / LinkedIn -->
+          <a href="https://github.com/YOiVDi" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yordan · YoidDev</p>
+    </div>
+  </footer>
+
+  <script>
+    // small enhancement: set current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
